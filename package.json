@@ -1,6 +1,7 @@
 {
   "name": "react-component-library-kumarith",
   "version": "1.0.4",
+  "homepage": "https://kumarith.github.io/react-component-lib",
   "private": false,
   "type": "module",
   "main": "dist/index.js",
@@ -15,9 +16,7 @@
       "types": "./dist/index.d.ts"
     }
   },
-
-  "homepage": "https://kumarith.github.io/react-component-lib",
-
+  
   "scripts": {
     "dev": "vite",
     "lint": "eslint .",
@@ -26,7 +25,6 @@
     "build-storybook": "storybook build",
     "build:types": "tsc -p tsconfig.build.json",
     "build": "npm run build:types && rollup -c",
-    "storybook:build": "build-storybook",
     "storybook:deploy": "npm run build-storybook && gh-pages -d storybook-static"
 
   },
