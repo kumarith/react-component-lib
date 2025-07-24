@@ -11,9 +11,9 @@ A lightweight and reusable React component library built with **TypeScript**, **
 
 ## ✨ Features
 
-- 🔧 **Reusable**: Ready-to-use for React applications
-- 🧑‍🎨 **Customizable**: Tailwind-based styling for easy theming
-- 🧠 **Typed**: Fully written in TypeScript with exported types
+- 🔧 **Reusable**: Ready-to-use for React applications  
+- 🧑‍🎨 **Customizable**: Tailwind-based styling for easy theming  
+- 🧠 **Typed**: Fully written in TypeScript with exported types  
 - 🧪 **Documented**: Interactive docs via Storybook
 
 ---
@@ -24,14 +24,15 @@ A lightweight and reusable React component library built with **TypeScript**, **
 npm install react-component-library-kumarith
 # or
 yarn add react-component-library-kumarith
+```
 
 ---
 
-## Usage
+## 📄 Usage
 
 ```tsx
 import React from "react";
-import { Form, Input, KButton } from "react-component-library-kumairth";
+import { Form, Input, KButton } from "react-component-library-kumarith";
 
 function ContactForm() {
   return (
@@ -41,47 +42,62 @@ function ContactForm() {
     </Form>
   );
 }
+```
 
 ---
 
-## StoryBook
+## 📚 Storybook
 
-View live documentation and component previews:
-link.......
-
----
-
-## Components
-
-- Form Component : 
-  A wrapper for form elements. Accepts standard `onSubmit` props and children.
-
-  `<Form onSubmit={handleSubmit}>{children}</Form>`
-
-- Input Component : 
-  Styled input with optional `label`, `name`, and `placeholder`.
-
-  `<Input label="Name" name="name" placeholder="Enter your name" />`
- 
-- KButton Component : 
-  Styled button with `type`, `variant`, and optional disabled.
-
-  `tsx<KButton type="submit" variant="primary">Submit<KButton>`
+View live documentation and component previews:  
+🔗 [Storybook Link](https://your-storybook-link.com)
 
 ---
 
-## TechStack
+## 🧱 Components
 
-- React
-- TypeScript
-- Tailwind CSS
-- Rollup (for bundling)
-- Storybook (for documentation)
+### 🧩 Form Component
+
+A wrapper for form elements. Accepts standard `onSubmit` props and children.
+
+```tsx
+<Form onSubmit={handleSubmit}>{children}</Form>
+```
 
 ---
 
-## Development
+### 🔤 Input Component
 
+Styled input with optional `label`, `name`, and `placeholder`.
+
+```tsx
+<Input label="Name" name="name" placeholder="Enter your name" />
+```
+
+---
+
+### 🟦 KButton Component
+
+Styled button with `type`, `variant`, and optional `disabled`.
+
+```tsx
+<KButton type="submit" variant="primary">Submit</KButton>
+```
+
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Rollup** (for bundling)
+- **Storybook** (for documentation)
+
+---
+
+## 🧪 Development
+
+```bash
 # Run Storybook locally
 npm run storybook
 
@@ -90,9 +106,4 @@ npm run build
 
 # Publish to npm
 npm publish --access public
-
-
-
-
-
-
+```
