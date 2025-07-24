@@ -46,13 +46,6 @@ function ContactForm() {
 
 ---
 
-## 📚 Storybook
-
-View live documentation and component previews:  
-🔗 [Storybook Link](https://your-storybook-link.com)
-
----
-
 ## 🧱 Components
 
 ### 🧩 Form Component
@@ -107,3 +100,13 @@ npm run build
 # Publish to npm
 npm publish --access public
 ```
+
+---
+
+## 🔗 Live Links
+
+- 🚀 **Storybook (Live Preview on Netlify)**: [https://react-component-lib-kumarith.netlify.app/](https://react-component-lib-kumarith.netlify.app/)
+- 📦 **NPM Package**: [https://www.npmjs.com/package/react-component-library-kumarith](https://www.npmjs.com/package/react-component-library-kumarith)
+- 💻 **GitHub Repository**: [https://github.com/kumarith/react-component-lib](https://github.com/kumarith/react-component-lib)
+
+---
