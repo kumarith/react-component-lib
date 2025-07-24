@@ -4,7 +4,7 @@ A lightweight and reusable React component library built with **TypeScript**, **
 
 ![npm](https://img.shields.io/npm/v/react-component-library-kumarith)
 ![types](https://img.shields.io/npm/types/react-component-library-kumarith)
-![build](https://img.shields.io/github/actions/workflow/status/kumarith/react-component-lib/build.yml)
+![build](https://img.shields.io/github/actions/workflow/status/kumarith/react-component-lib/ci.yml)
 ![license](https://img.shields.io/npm/l/react-component-library-kumarith)
 
 ---
@@ -24,3 +24,69 @@ A lightweight and reusable React component library built with **TypeScript**, **
 npm install react-component-library-kumarith
 # or
 yarn add react-component-library-kumarith
+
+## Usage
+
+<pre><code>```import React from "react";
+import { Form, Input, KButton } from "react-component-library-kumairth";
+
+function ContactForm() {
+  return (
+    <Form onSubmit={(e) => e.preventDefault()}>
+      <Input label="Email" name="email" placeholder="Enter your email" />
+      <KButton type="submit">Submit</KButton>
+    </Form>
+  );
+}```</code></pre>
+
+## StoryBook
+
+View live documentation and component previews:
+link.......
+
+## Components
+
+- Form Component : 
+  A wrapper for form elements. Accepts standard onSubmit props and children.
+
+  <pre><code>```tsx<Form onSubmit={handleSubmit}>{children}</Form>```</code></pre>
+
+- Input Component : 
+  Styled input with optional label, name, and placeholder.
+
+  <pre><code>```tsx<Input label="Name" name="name" placeholder="Enter your name" />```</code></pre>
+ 
+- KButton Component : 
+  Styled button with type, variant, and optional disabled.
+
+  <pre><code>```tsx<KButton type="submit" variant="primary">Submit<KButton>```</code></pre>
+
+
+## TechStack
+
+- React
+
+- TypeScript
+
+- Tailwind CSS
+
+- Rollup (for bundling)
+
+- Storybook (for documentation)
+
+## Development
+
+# Run Storybook locally
+npm run storybook
+
+# Build the library
+npm run build
+
+# Publish to npm
+npm publish --access public
+
+
+
+
+
+
