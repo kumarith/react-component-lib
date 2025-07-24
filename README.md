@@ -29,7 +29,8 @@ yarn add react-component-library-kumarith
 
 ## Usage
 
-```import React from "react";
+```tsx
+import React from "react";
 import { Form, Input, KButton } from "react-component-library-kumairth";
 
 function ContactForm() {
@@ -39,7 +40,7 @@ function ContactForm() {
       <KButton type="submit">Submit</KButton>
     </Form>
   );
-}```
+}
 
 ---
 
@@ -53,19 +54,19 @@ link.......
 ## Components
 
 - Form Component : 
-  A wrapper for form elements. Accepts standard onSubmit props and children.
+  A wrapper for form elements. Accepts standard `onSubmit` props and children.
 
-  ```tsx<Form onSubmit={handleSubmit}>{children}</Form>```
+  `<Form onSubmit={handleSubmit}>{children}</Form>`
 
 - Input Component : 
-  Styled input with optional label, name, and placeholder.
+  Styled input with optional `label`, `name`, and `placeholder`.
 
-  ```tsx<Input label="Name" name="name" placeholder="Enter your name" />```
+  `<Input label="Name" name="name" placeholder="Enter your name" />`
  
 - KButton Component : 
-  Styled button with type, variant, and optional disabled.
+  Styled button with `type`, `variant`, and optional disabled.
 
-  ```tsx<KButton type="submit" variant="primary">Submit<KButton>```
+  `tsx<KButton type="submit" variant="primary">Submit<KButton>`
 
 ---
 
