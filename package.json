@@ -1,15 +1,17 @@
 {
-  "name": "react-component-library",
-  "private": true,
-  "version": "0.0.0",
+  "name": "react-component-library-kumarith",
+  "version": "1.0.4",
+  "private": false,
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.js",
       "types": "./dist/index.d.ts"
     }
   },
@@ -21,6 +23,10 @@
     "build-storybook": "storybook build",
     "build:types": "tsc -p tsconfig.build.json",
     "build": "npm run build:types && rollup -c"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
   },
   "dependencies": {
     "react": "^19.1.0",
@@ -57,5 +63,12 @@
     "typescript-eslint": "^8.34.1",
     "vite": "^5.4.19",
     "vitest": "^3.2.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kumarith/react-component-library.git"
+  },
+  "author": "Kumari T",
+  "license": "MIT",
+  "description": "Reusable React component library built with TypeScript, Rollup, and Tailwind CSS."
 }

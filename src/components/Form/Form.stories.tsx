@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Form } from './Form';
 import { Input } from '../Input/Input';
-import { Button } from '../Button/Button';
+import { KButton } from '../Button/Button';
 import { useState } from 'react';
 
 const meta: Meta<typeof Form> = {
@@ -42,7 +42,7 @@ export const Default: Story = {
           />
         </div>
 
-        <Button label="Submit" />
+        <KButton label="Submit" />
       </Form>
     );
   },
@@ -103,7 +103,7 @@ export const WithValidation: Story = {
           </div>
         )}
 
-        <Button label="Submit" />
+        <KButton label="Submit" />
       </Form>
     );
   },

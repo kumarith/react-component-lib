@@ -1,31 +1,27 @@
+import typescript from '@rollup/plugin-typescript';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import esbuild from 'rollup-plugin-esbuild';
 
 export default {
-  input: 'src/index.ts',
+  input: 'src/index.ts', // ✅ main entry
   output: {
-    dir: 'dist',
-    format: 'es',
+    file: 'dist/index.js',
+    format: 'esm',
     sourcemap: true,
-    preserveModules: true,
-    preserveModulesRoot: 'src',
-    entryFileNames: '[name].js',
-    interop: 'auto'
   },
+  external: ['react', 'react-dom'],
   plugins: [
-    resolve({ extensions: ['.js', '.ts', '.tsx'] }),
-    commonjs({
-      include: /node_modules/,
+    resolve({
+      extensions: ['.js', '.ts', '.jsx', '.tsx'], // ✅ include .tsx
     }),
-    esbuild({
-      include: /\.[jt]sx?$/,
-      minify: process.env.NODE_ENV === 'production',
-      target: 'es2022',
-      jsx: 'automatic',
-      sourceMap: true,
-      tsconfig: 'tsconfig.json',
+    commonjs(),
+    typescript({
+      tsconfig: './tsconfig.json',
+      jsx: 'react-jsx',               // ✅ explicitly handle JSX
+      declaration: true,
+      declarationDir: 'dist',
+      rootDir: 'src',
+      exclude: ['**/*.test.ts', '**/*.stories.tsx'],
     }),
   ],
-  external: ['react', 'react-dom'],
 };

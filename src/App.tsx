@@ -1,5 +1,6 @@
 import  {useState} from 'react'
-import { Button, Input } from './index';
+import { Input } from './index';
+import { KButton } from './components/Button/Button';
 
 const App = () => {
 const [text, setText] = useState('')
@@ -12,12 +13,12 @@ const [text, setText] = useState('')
         onChange={setText}
         placeholder="Type something..."
       />
-      <Button
+      <KButton
         onClick={() => alert(`You typed: ${text}`)}
         label="Show Text"
       />
 
-      <Button
+      <KButton
         onClick={() => console.log('Button clicked')}
         label="Console Log"
       />
