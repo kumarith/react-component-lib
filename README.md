@@ -25,9 +25,11 @@ npm install react-component-library-kumarith
 # or
 yarn add react-component-library-kumarith
 
+---
+
 ## Usage
 
-<pre><code>```import React from "react";
+```import React from "react";
 import { Form, Input, KButton } from "react-component-library-kumairth";
 
 function ContactForm() {
@@ -37,42 +39,45 @@ function ContactForm() {
       <KButton type="submit">Submit</KButton>
     </Form>
   );
-}```</code></pre>
+}```
+
+---
 
 ## StoryBook
 
 View live documentation and component previews:
 link.......
 
+---
+
 ## Components
 
 - Form Component : 
   A wrapper for form elements. Accepts standard onSubmit props and children.
 
-  <pre><code>```tsx<Form onSubmit={handleSubmit}>{children}</Form>```</code></pre>
+  ```tsx<Form onSubmit={handleSubmit}>{children}</Form>```
 
 - Input Component : 
   Styled input with optional label, name, and placeholder.
 
-  <pre><code>```tsx<Input label="Name" name="name" placeholder="Enter your name" />```</code></pre>
+  ```tsx<Input label="Name" name="name" placeholder="Enter your name" />```
  
 - KButton Component : 
   Styled button with type, variant, and optional disabled.
 
-  <pre><code>```tsx<KButton type="submit" variant="primary">Submit<KButton>```</code></pre>
+  ```tsx<KButton type="submit" variant="primary">Submit<KButton>```
 
+---
 
 ## TechStack
 
 - React
-
 - TypeScript
-
 - Tailwind CSS
-
 - Rollup (for bundling)
-
 - Storybook (for documentation)
+
+---
 
 ## Development
 
