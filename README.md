@@ -30,13 +30,13 @@ yarn add react-component-library-kumarith
 
 ## Playwright E2E
 
-# Install Playwright dependencies and browsers
+- Install Playwright dependencies and browsers
 npx playwright install --with-deps
 
-# Run tests
+- Run tests
 npm run test:e2e
 
-# View tests report
+- View tests report
 npx playwright show-report
 
 ---
