@@ -18,13 +18,36 @@ A lightweight and reusable React component library built with **TypeScript**, **
 
 ---
 
-## 📦 Installation
+## 📦 Installation 
 
 ```bash
 npm install react-component-library-kumarith
 # or
 yarn add react-component-library-kumarith
 ```
+
+---
+
+## Playwright E2E
+
+# Install Playwright dependencies and browsers
+npx playwright install --with-deps
+
+# Run tests
+npm run test:e2e
+
+# View tests report
+npx playwright show-report
+
+---
+
+## GithubActions CI Workflow 
+
+- This project includes a CI pipeline that:
+- Runs on push and pull_request to the main branch
+- Installs Node.js and project dependencies
+- Runs Playwright E2E tests
+- Uploads Playwright test reports
 
 ---
 
@@ -63,7 +86,7 @@ A wrapper for form elements. Accepts standard `onSubmit` props and children.
 Styled input with optional `label`, `name`, and `placeholder`.
 
 ```tsx
-<Input label="Name" name="name" placeholder="Enter your name" />
+<Input label="Name" name="name" placeholder="Enter your name" onChange={(e) => onChange(e.target.value)} />
 ```
 
 ---
@@ -73,7 +96,7 @@ Styled input with optional `label`, `name`, and `placeholder`.
 Styled button with `type`, `variant`, and optional `disabled`.
 
 ```tsx
-<KButton type="submit" variant="primary">Submit</KButton>
+<KButton type="submit" variant="primary" onClick={onClick}>Submit</KButton>
 ```
 
 ---
