@@ -105,13 +105,13 @@ Styled button with `type`, `variant`, and optional `disabled`.
 Here are some components rendered inside Storybook:
 
 ### Buttons
-![Button Component in Storybook](./assets/storybook-button.png)
+![Button Component in Storybook](./assets/Button.png)
 
 ### Inputs
-![Input Component in Storybook](./assets/storybook-input.png)
+![Input Component in Storybook](./assets/Input.png)
 
 ### Forms
-![Form Component in Storybook](./assets/storybook-form.png)
+![Form Component in Storybook](./assets/Form.png)
 
 ---
 
