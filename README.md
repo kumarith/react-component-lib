@@ -98,6 +98,20 @@ Styled button with `type`, `variant`, and optional `disabled`.
 ```tsx
 <KButton type="submit" variant="primary" onClick={onClick}>Submit</KButton>
 ```
+---
+
+## 📖 Storybook Preview
+
+Here are some components rendered inside Storybook:
+
+### Buttons
+![Button Component in Storybook](./assets/Button.png)
+
+### Inputs
+![Input Component in Storybook](./assets/Input.png)
+
+### Forms
+![Form Component in Storybook](./assets/Form.png)
 
 ---
 
